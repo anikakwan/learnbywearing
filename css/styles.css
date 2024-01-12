@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+/* GENERAL STYLES */
+body {
+	font-family: 'Inter', sans-serif; font-size:14px; margin-top:0;
+	background-color: #fffbf5;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 1000px;
+}
+
+h2 {
+	font-size: 48px;
+	font-family: 'Instrument Serif', serif;
+	color: #0028BC; 
+}
+
+h3 {
+	font-size: 18px;
+	color:#FA9BBC;
+	font-weight: 500;
+}
+
+p {
+	font-size: 14px;
+}
+
+/* SIZE CHART */
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* BUTTON */
+.button {
+	background-color: #0028BC; /* Nueva Blue */
+	border: none;
+	color: white;
+	padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Inter';
+	font-size: 14px;
+	border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #04AA6D; /* Green */
+  color: white;
+}
+
+/* UNCLICKED LINK */
+a:link {
+	color: mediumblue;
+}
+
+/* CLICKED LINK */
+a:visited {
+	color: mediumblue;
+}
+
+/* HOVER LINK */
+a:hover {
+	color: hotpink;
+}
+
+/* SELECTED LINK */
+a:active {
+	color: mediumblue;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:-100px;
+  height:100px;
+  color:#fff;
+  position:sticky;
+  bottom: 0;
+  line-height:180%;
+  padding:0 10px;
+}
+
