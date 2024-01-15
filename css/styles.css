@@ -10,13 +10,15 @@ body {
 	background-color: #fffbf5;
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-bottom: 1000px;
+	padding-top:20px;
+	display: flex;
+	flex-direction: column;
 }
 
 h2 {
 	font-size: 48px;
 	font-family: 'Instrument Serif', serif;
-	color: #0028BC; 
+	color: #174888; 
 }
 
 h3 {
@@ -39,7 +41,7 @@ th {
 
 /* BUTTON */
 .button {
-	background-color: #0028BC; /* Nueva Blue */
+	background-color: #174888; /* Nueva Blue */
 	border: none;
 	color: white;
 	padding: 12px;
@@ -56,34 +58,111 @@ th {
   color: white;
 }
 
-/* UNCLICKED LINK */
+/* IMAGES SIDE BY SIDE: Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+	float:center;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* IMAGE SLIDER 
+.slider {
+	width: 100%;
+	height: 650px;
+	position: relative;
+	float: right;
+}
+
+.slider img {
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.slider img:first-child {
+	z-index:1;
+}
+
+.slider img:nth-child(2) {
+	z-index:0;
+} */
+
+/* NAVIGATION DOTS */
+.navigation-button {
+	text-align: center;
+	position: relative;
+}
+
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 0%;
+	display: inline-block;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* UNCLICKED LINK https://www.bannerbear.com/blog/how-to-create-an-image-slider-in-html-css-and-javascript/ */ 
 a:link {
-	color: mediumblue;
+	color: #174888;
 }
 
 /* CLICKED LINK */
 a:visited {
-	color: mediumblue;
+	color: #174888;
 }
 
 /* HOVER LINK */
 a:hover {
-	color: hotpink;
+	color: #04AA6D;
 }
 
 /* SELECTED LINK */
 a:active {
-	color: mediumblue;
+	color: #174888;
 }
 
 /* FOOTER */
-.footer{
-  margin-top:-100px;
-  height:100px;
-  color:#fff;
-  position:sticky;
+footer{
+	background-color: #fffbf5
+  position: fixed;
+  clear:both;
+  left: 0;
+  right: 0;
   bottom: 0;
-  line-height:180%;
-  padding:0 10px;
+  height: 50px;
+  width:100%;
+  margin-top: auto;
+
+.footer-left {display: inline-block;}
+.footer-right {display: inline-block; float: right}
+
+.contact {
+	font-size:14px;
 }
+
+.credit {
+	font-size: 14px;}
+}
+
 

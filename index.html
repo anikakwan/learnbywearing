@@ -8,8 +8,6 @@
       <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    </style>
-
 </head>
 
 <body> 
@@ -17,13 +15,33 @@
      <h2>Crewneck No. 01</h2>
      <div class="content">
 
-      <img src="images/hf07_navy.jpg\" alt="grey-1"> <br> 
+    <!-- IMAGE SLIDER
+      <div class="slider">
+            <img id="flatlay-cream" src="images/flatlay-cream.png" alt="Cream Flatlay"/>
+            <img id="flatlay-navy" src="images/flatlay-navy.png" alt="Navy Flatlay" />
+        </div><br> 
 
-      <br> Rep your favorite gifted institution with this new and improved crewneck that checks all the boxes: high-quality, cozy, and most importantly, good looking. Keep long enough and it'll become vintage. <br>
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span> 
+        </div> -->
 
-      <br> If you have any questions, drop us a note <a href=mailto:learnbycaringlearnbywearing@gmail.com>here</a>. 
+<!-- IMAGES -->
+    
+    <div class="row">
+        <div class="column">
+            <img src="images/crewneck-cream.png" alt="crewneck-cream" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="images/crewneck-navy.png" alt="crewneck-navy" style="width:100%;">
+        </div>
+   </div>         
 
-      <br><br> Learn by doing, learn by caring, learn by wearing! 
+
+      Rep your favorite gifted institution with this new and improved crewneck that checks all the boxes: high-quality, cozy, and most importantly, good looking. Keep long enough and it'll become vintage. 
+
+        <br><br> Learn by doing, learn by caring, learn by wearing! ;)
 
       <ul>
             <li>Made from ethically manufactured heavyweight fleece and printed locally in NY</li>
@@ -40,10 +58,34 @@
 
     </div>
 
+ 
+
+<script type="text/javascript" src="js/imageslider.js"></script>
+
 </body>
 
 </html>
 
+
+<footer>
+        <br><br><br><br><br><br> 
+
+        <div class="footer-left">
+            <p class="contact"> If you have any questions, drop us a note <a href=mailto:learnbycaringlearnbywearing@gmail.com>here</a>.</p> 
+        </div>
+
+        <div class="footer-right">
+            <p class="credit">Designed with love by <a href="https://www.instagram.com/anikakwan">Anika Kwan</a></p>
+        </div>
+       
+</footer>
+
+<script>
+  var footerResize = function() {
+    $('#footer').css('position', $("body").height() + $("#footer").innerHeight() > $(window).height() ? "inherit" : "fixed");
+  };
+  $(window).resize(footerResize).ready(footerResize);
+</script>
 
 <!-- FOOTER??? 
     <ul>
